@@ -706,22 +706,44 @@ section:nth-child(even) { background: var(--surface); }
 }
 
 .hobby-card {
-  background: var(--surface-container);
-  border: 1px solid var(--outline-variant);
+  position: relative;
+  overflow: hidden;
   border-radius: var(--radius-xl);
-  padding: 2.5rem 1rem;
-  text-align: center;
-  transition: border-color .2s, transform .25s, box-shadow .25s;
+  border: 1px solid var(--outline-variant);
+  min-height: 240px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  transition: border-color .25s, transform .25s, box-shadow .25s;
+}
+
+.hobby-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5,13,26,.85) 0%, rgba(5,13,26,.50) 60%, rgba(5,13,26,.20) 100%);
+  transition: opacity .3s;
 }
 
 .hobby-card:hover {
   border-color: var(--secondary-dim);
   transform: translateY(-6px);
-  box-shadow: 0 10px 36px rgba(2,190,220,.12);
+  box-shadow: 0 10px 36px rgba(2,190,220,.15);
 }
 
-.hobby-icon  { font-size: 2.5rem; margin-bottom: .75rem; }
-.hobby-label { font-size: .9rem; font-weight: 600; color: var(--on-surface-muted); }
+.hobby-card:hover::before { opacity: .75; }
+
+.hobby-label {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .03em;
+}
 
 /* ═══════════════════════════════════════
    FOOTER / CONTACTO
