@@ -3,29 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edgar Coronel — Delivery Manager & Digital Transformation Leader</title>
-
-  <!-- OG / Social -->
-  <meta property="og:title"       content="Edgar Coronel — Delivery Manager & Digital Transformation Leader" />
+  <title>Edgar Coronel Navarrete — Delivery Manager & Digital Transformation Leader</title>
+  <meta property="og:title"       content="Edgar Coronel Navarrete — Delivery Manager & Digital Transformation Leader" />
   <meta property="og:description" content="20+ años liderando transformación digital en LATAM y Norteamérica. MBA · Industry 4.0 · AI." />
   <meta property="og:type"        content="website" />
-  <meta name="description"        content="Sitio personal de Edgar Edmundo Coronel Navarrete — Delivery Manager, MBA, Digital Transformation Leader con más de 20 años de experiencia en Siemens e IBM." />
-
-  <!-- Fonts -->
+  <meta name="description"        content="Sitio personal de Edgar Coronel Navarrete — Delivery Manager, MBA, Digital Transformation Leader con más de 20 años de experiencia en Siemens e IBM." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════
-     NAVBAR
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ NAVBAR ══════════════════════ -->
 <nav id="navbar">
   <div class="nav-container">
     <a class="nav-logo" href="#hero">EC</a>
@@ -35,55 +26,49 @@
     </button>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="#sobre-mi">Sobre Mí</a></li>
-      <li><a href="#trayectoria">Trayectoria</a></li>
-      <li><a href="#formacion">Formación</a></li>
-      <li><a href="#certificaciones">Certificaciones</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contacto" class="nav-cta">Contacto →</a></li>
+      <li><a href="#sobre-mi"       data-i18n="nav.about">Sobre Mí</a></li>
+      <li><a href="#trayectoria"    data-i18n="nav.experience">Trayectoria</a></li>
+      <li><a href="#formacion"      data-i18n="nav.education">Formación</a></li>
+      <li><a href="#certificaciones"data-i18n="nav.certs">Certificaciones</a></li>
+      <li><a href="#skills"         data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#hobbies"        data-i18n="nav.hobbies">Hobbies</a></li>
+      <li><a href="#contacto" class="nav-cta" data-i18n="nav.contact">Contacto →</a></li>
     </ul>
+
+    <button id="langToggle" class="lang-toggle" aria-label="Switch to English">EN</button>
   </div>
 </nav>
 
 
-<!-- ══════════════════════════════════════════
-     HERO
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ HERO ══════════════════════ -->
 <section id="hero">
   <div class="hero-container">
-
     <div class="hero-photo-wrapper">
       <img
         src="images/ChatGPT%20Image%2012%20jun%202026%2C%2003_46_35%20p.m.png"
-        alt="Edgar Edmundo Coronel Navarrete"
+        alt="Edgar Coronel Navarrete"
         class="hero-photo"
       />
     </div>
-
     <div class="hero-content">
-      <span class="hero-label">Delivery Manager</span>
-      <h1 class="hero-name">Edgar Edmundo<br>Coronel Navarrete</h1>
+      <span class="hero-label" data-i18n="hero.label">Delivery Manager</span>
+      <h1 class="hero-name">Edgar<br>Coronel Navarrete</h1>
       <p class="hero-tagline">Digital Transformation Leader · MBA · Industry 4.0</p>
-      <p class="hero-sub">Siemens DISW &nbsp;·&nbsp; LATAM &amp; North America &nbsp;·&nbsp; +20 años de experiencia</p>
+      <p class="hero-sub" data-i18n="hero.sub">Siemens DISW &nbsp;·&nbsp; LATAM &amp; North America &nbsp;·&nbsp; +20 años de experiencia</p>
       <div class="hero-actions">
-        <a href="#trayectoria" class="btn-primary">Ver Trayectoria</a>
-        <a href="#contacto"   class="btn-secondary">Contacto</a>
+        <a href="#trayectoria" class="btn-primary"  data-i18n="hero.cta1">Ver Trayectoria</a>
+        <a href="#contacto"    class="btn-secondary" data-i18n="hero.cta2">Contacto</a>
       </div>
     </div>
-
   </div>
   <div class="hero-scroll-hint">↓</div>
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     SOBRE MÍ
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ SOBRE MÍ ══════════════════════ -->
 <section id="sobre-mi">
   <div class="container">
-    <h2 class="section-title">Sobre Mí</h2>
-
+    <h2 class="section-title" data-i18n="about.title">Sobre Mí</h2>
     <div class="about-grid">
       <div class="about-photo-wrapper animate-on-scroll">
         <img
@@ -92,21 +77,9 @@
           class="about-photo"
         />
       </div>
-
       <div class="about-content">
-        <p class="about-text">
-          Soy un líder de Transformación Digital y Delivery Manager con más de 20 años de experiencia
-          dirigiendo iniciativas digitales end-to-end en LATAM y Norteamérica. A lo largo de mi carrera
-          he liderado programas complejos de software, infraestructura e Industria 4.0 en empresas como
-          Siemens e IBM, gestionando equipos multiculturales, P&amp;L y la relación directa con C-Levels.
-        </p>
-        <p class="about-text">
-          Cuento con un MBA con enfoque tecnológico por la Southern New Hampshire University (GPA 3.939)
-          y actualmente curso la Maestría en Tecnologías de Información e Inteligencia Analítica en la
-          Universidad Anáhuac. Soy apasionado por la IA generativa, Industry 4.0 y la creación de valor
-          a través de la tecnología y la innovación estratégica.
-        </p>
-
+        <p class="about-text" data-i18n="about.p1">Soy un líder de Transformación Digital y Delivery Manager con más de 20 años de experiencia dirigiendo iniciativas digitales end-to-end en LATAM y Norteamérica. A lo largo de mi carrera he liderado programas complejos de software, infraestructura e Industria 4.0 en empresas como Siemens e IBM, gestionando equipos multiculturales, P&amp;L y la relación directa con C-Levels.</p>
+        <p class="about-text" data-i18n="about.p2">Cuento con un MBA con enfoque tecnológico por la Southern New Hampshire University (GPA 3.939) y actualmente curso la Maestría en Tecnologías de Información e Inteligencia Analítica en la Universidad Anáhuac. Soy apasionado por la IA generativa, Industry 4.0 y la creación de valor a través de la tecnología y la innovación estratégica.</p>
         <div class="about-tags">
           <span class="tag">Industry 4.0</span>
           <span class="tag">PLM · IIoT</span>
@@ -115,17 +88,16 @@
           <span class="tag">Agile · Scrum</span>
           <span class="tag">P&amp;L Management</span>
         </div>
-
         <div class="about-languages">
           <div class="lang-item">
             <span class="lang-name">Español</span>
             <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
-            <span class="lang-level">Nativo</span>
+            <span class="lang-level" data-i18n="lang.es.label">Nativo</span>
           </div>
           <div class="lang-item">
             <span class="lang-name">English</span>
             <div class="lang-bar"><div class="lang-fill" style="width:88%"></div></div>
-            <span class="lang-level">Fluido</span>
+            <span class="lang-level" data-i18n="lang.en.label">Fluido</span>
           </div>
         </div>
       </div>
@@ -134,32 +106,29 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     TRAYECTORIA
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ TRAYECTORIA ══════════════════════ -->
 <section id="trayectoria">
   <div class="container">
-    <h2 class="section-title">Trayectoria Profesional</h2>
-
+    <h2 class="section-title" data-i18n="exp.title">Trayectoria Profesional</h2>
     <div class="timeline">
 
       <!-- Siemens DISW -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content animate-on-scroll">
-          <span class="timeline-date">Jun 2018 — Presente</span>
-          <h3 class="timeline-role">Delivery Manager</h3>
-          <p class="timeline-company">Siemens DISW Mexico</p>
-          <ul class="timeline-bullets">
-            <li>Lideró programas de transformación digital multi-país con 95%+ de cumplimiento en tiempo.</li>
-            <li>Implementaciones end-to-end de Teamcenter (PLM), Insights Hub (IIoT), Senseye, NX/Tecnomatix y soluciones de integración complejas.</li>
-            <li>Gestión de P&amp;L, forecasting de ingresos y presupuestos de hasta $1M USD.</li>
-            <li>Representante ejecutivo de Siemens ante C-Levels y VP en steering committees de alto nivel.</li>
-            <li>Parte del Canada PMO como Project Manager para clientes Bombardier y New Flyer.</li>
+          <span class="timeline-date"    data-i18n="exp1.date">Jun 2018 — Presente</span>
+          <h3  class="timeline-role"     data-i18n="exp1.role">Delivery Manager</h3>
+          <p   class="timeline-company">Siemens DISW Mexico</p>
+          <ul  class="timeline-bullets">
+            <li data-i18n="exp1.b1">Lideró programas de transformación digital multi-país con 95%+ de cumplimiento en tiempo.</li>
+            <li data-i18n="exp1.b2">Implementaciones end-to-end de Teamcenter (PLM), Insights Hub (IIoT), Senseye, NX/Tecnomatix y soluciones de integración complejas.</li>
+            <li data-i18n="exp1.b3">Gestión de P&amp;L, forecasting de ingresos y presupuestos de hasta $1M USD.</li>
+            <li data-i18n="exp1.b4">Representante ejecutivo de Siemens ante C-Levels y VP en steering committees de alto nivel.</li>
+            <li data-i18n="exp1.b5">Parte del Canada PMO como Project Manager para clientes Bombardier y New Flyer.</li>
           </ul>
           <div class="timeline-awards">
-            <span class="award-chip">🏆 Excellence in Project Execution '19 · '21 · '22 · '23 · '24</span>
-            <span class="award-chip">⭐ Top Service Contributor 2021 · ACE Awards</span>
+            <span class="award-chip" data-i18n="exp1.award1">🏆 Excellence in Project Execution '19 · '21 · '22 · '23 · '24 · '25</span>
+            <span class="award-chip" data-i18n="exp1.award2">⭐ Top Service Contributor 2021 · ACE Awards</span>
           </div>
         </div>
       </div>
@@ -168,14 +137,14 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content animate-on-scroll">
-          <span class="timeline-date">Ago 2014 — Jun 2018</span>
-          <h3 class="timeline-role">SAP/IT Project Manager Sr.</h3>
-          <p class="timeline-company">Siemens IT Mexico</p>
-          <ul class="timeline-bullets">
-            <li>Programas SAP: Hana, Carve-in, Carve-out, Merge, COPA, Archiving — México, Canadá y Costa Rica.</li>
-            <li>Implementación exitosa de todos los servicios IT en el nuevo Delivery Center de Siemens Costa Rica.</li>
-            <li>Reporte ejecutivo a CIO, CFO y Steering Committee; reconocido constantemente por el FLT (Top Siemens Management Board).</li>
-            <li>Proyecto Cancún (fusión de Divisiones MX y CAM): distinguido como el proyecto más importante de Siemens en LATAM 2017.</li>
+          <span class="timeline-date"    data-i18n="exp2.date">Ago 2014 — Jun 2018</span>
+          <h3  class="timeline-role"     data-i18n="exp2.role">SAP/IT Project Manager Sr.</h3>
+          <p   class="timeline-company">Siemens IT Mexico</p>
+          <ul  class="timeline-bullets">
+            <li data-i18n="exp2.b1">Programas SAP: Hana, Carve-in, Carve-out, Merge, COPA, Archiving — México, Canadá y Costa Rica.</li>
+            <li data-i18n="exp2.b2">Implementación exitosa de todos los servicios IT en el nuevo Delivery Center de Siemens Costa Rica.</li>
+            <li data-i18n="exp2.b3">Reporte ejecutivo a CIO, CFO y Steering Committee; reconocido constantemente por el FLT (Top Siemens Management Board).</li>
+            <li data-i18n="exp2.b4">Proyecto Cancún (fusión de Divisiones MX y CAM): distinguido como el proyecto más importante de Siemens en LATAM 2017.</li>
           </ul>
         </div>
       </div>
@@ -184,30 +153,30 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content animate-on-scroll">
-          <span class="timeline-date">Jul 2011 — Oct 2013</span>
-          <h3 class="timeline-role">Program &amp; Project Manager</h3>
-          <p class="timeline-company">IBM</p>
-          <ul class="timeline-bullets">
-            <li>Dual-role Program Manager &amp; Sr. PM para el Programa de Mejora Continua de Iusacell: más de 100 iniciativas de excelencia operacional.</li>
-            <li>Más de 20 proyectos de transformación de infraestructura enterprise.</li>
-            <li>Reportes directos al VP de IBM y CIOs del cliente; gestión de KPIs, dashboards y SLA/SLO con AT&amp;T.</li>
+          <span class="timeline-date"   data-i18n="exp3.date">Jul 2011 — Oct 2013</span>
+          <h3  class="timeline-role"    data-i18n="exp3.role">Program &amp; Project Manager</h3>
+          <p   class="timeline-company">IBM</p>
+          <ul  class="timeline-bullets">
+            <li data-i18n="exp3.b1">Dual-role Program Manager &amp; Sr. PM para el Programa de Mejora Continua de Iusacell: más de 100 iniciativas de excelencia operacional.</li>
+            <li data-i18n="exp3.b2">Más de 20 proyectos de transformación de infraestructura enterprise.</li>
+            <li data-i18n="exp3.b3">Reportes directos al VP de IBM y CIOs del cliente; gestión de KPIs, dashboards y SLA/SLO con AT&amp;T.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Experiencias anteriores -->
+      <!-- Earlier -->
       <div class="timeline-item">
         <div class="timeline-dot timeline-dot-sm"></div>
         <div class="timeline-content animate-on-scroll">
-          <span class="timeline-date">2005 — 2011</span>
-          <h3 class="timeline-role">Experiencias Anteriores</h3>
-          <p class="timeline-company">+6 años en roles de PM &amp; PMO</p>
+          <span class="timeline-date"   data-i18n="exp4.date">2005 — 2011</span>
+          <h3  class="timeline-role"    data-i18n="exp4.role">Experiencias Anteriores</h3>
+          <p   class="timeline-company" data-i18n="exp4.company">+6 años en roles de PM &amp; PMO</p>
           <div class="earlier-list">
-            <div class="earlier-item"><strong>CAELI</strong><span>PMO / Delivery Manager — Mar 2010 · Jul 2011</span></div>
-            <div class="earlier-item"><strong>NEXTEL</strong><span>Project Manager Sr. — Jun 2009 · Mar 2010</span></div>
-            <div class="earlier-item"><strong>PRAXIS</strong><span>Project Manager — Feb 2008 · Feb 2009</span></div>
-            <div class="earlier-item"><strong>RTW</strong><span>Project Manager — Feb 2007 · Ene 2008</span></div>
-            <div class="earlier-item"><strong>DEPORTES MARTÍ</strong><span>Project Manager — Jun 2005 · Feb 2007</span></div>
+            <div class="earlier-item"><strong>CAELI</strong>          <span data-i18n="earlier.caeli">PMO / Delivery Manager — Mar 2010 · Jul 2011</span></div>
+            <div class="earlier-item"><strong>NEXTEL</strong>         <span data-i18n="earlier.nextel">Project Manager Sr. — Jun 2009 · Mar 2010</span></div>
+            <div class="earlier-item"><strong>PRAXIS</strong>         <span data-i18n="earlier.praxis">Project Manager — Feb 2008 · Feb 2009</span></div>
+            <div class="earlier-item"><strong>RTW</strong>            <span data-i18n="earlier.rtw">Project Manager — Feb 2007 · Ene 2008</span></div>
+            <div class="earlier-item"><strong>DEPORTES MARTÍ</strong> <span data-i18n="earlier.marti">Project Manager — Jun 2005 · Feb 2007</span></div>
           </div>
         </div>
       </div>
@@ -217,37 +186,34 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     FORMACIÓN
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ FORMACIÓN ══════════════════════ -->
 <section id="formacion">
   <div class="container">
-    <h2 class="section-title">Formación Académica</h2>
-
+    <h2 class="section-title" data-i18n="edu.title">Formación Académica</h2>
     <div class="education-grid">
 
       <div class="edu-card animate-on-scroll">
         <div class="edu-year">2026 — Actual</div>
-        <span class="edu-badge">En Curso</span>
-        <h3 class="edu-degree">Maestría en Tecnologías de Información e Inteligencia Analítica</h3>
-        <p class="edu-school">Universidad Anáhuac</p>
-        <p class="edu-detail">MTIIA · Ciudad de México</p>
+        <span class="edu-badge"      data-i18n="edu1.badge">En Curso</span>
+        <h3  class="edu-degree"      data-i18n="edu1.degree">Maestría en Tecnologías de Información e Inteligencia Analítica</h3>
+        <p   class="edu-school">Universidad Anáhuac</p>
+        <p   class="edu-detail"      data-i18n="edu1.detail">MTIIA · Ciudad de México</p>
       </div>
 
       <div class="edu-card animate-on-scroll">
         <div class="edu-year">2023 — 2025</div>
-        <span class="edu-badge edu-badge-done">Completado</span>
-        <h3 class="edu-degree">Master of Business Administration — Technology Focus</h3>
-        <p class="edu-school">Southern New Hampshire University (SNHU)</p>
-        <p class="edu-detail">GPA: 3.939 · Cum Laude</p>
+        <span class="edu-badge edu-badge-done" data-i18n="edu2.badge">Completado</span>
+        <h3  class="edu-degree">Master of Business Administration — Technology Focus</h3>
+        <p   class="edu-school">Southern New Hampshire University (SNHU)</p>
+        <p   class="edu-detail" data-i18n="edu2.detail">GPA: 3.939 · Cum Laude</p>
       </div>
 
       <div class="edu-card animate-on-scroll">
         <div class="edu-year">1999 — 2004</div>
-        <span class="edu-badge edu-badge-done">Completado</span>
-        <h3 class="edu-degree">Ingeniería en Sistemas Computacionales</h3>
-        <p class="edu-school">Instituto Tecnológico de Veracruz</p>
-        <p class="edu-detail">Veracruz, México</p>
+        <span class="edu-badge edu-badge-done" data-i18n="edu3.badge">Completado</span>
+        <h3  class="edu-degree"  data-i18n="edu3.degree">Ingeniería en Sistemas Computacionales</h3>
+        <p   class="edu-school">Instituto Tecnológico de Veracruz</p>
+        <p   class="edu-detail"  data-i18n="edu3.detail">Veracruz, México</p>
       </div>
 
     </div>
@@ -255,62 +221,41 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     CERTIFICACIONES & RECONOCIMIENTOS
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ CERTIFICACIONES ══════════════════════ -->
 <section id="certificaciones">
   <div class="container">
-    <h2 class="section-title">Certificaciones &amp; Reconocimientos</h2>
-
+    <h2 class="section-title" data-i18n="certs.title">Certificaciones &amp; Reconocimientos</h2>
     <div class="cert-reco-grid">
 
       <div class="cert-panel animate-on-scroll">
-        <h3 class="panel-title"><i class="fas fa-certificate"></i> Certificaciones</h3>
+        <h3 class="panel-title"><i class="fas fa-certificate"></i> <span data-i18n="certs.panel">Certificaciones</span></h3>
         <div class="cert-list">
-          <div class="cert-item">
-            <i class="fas fa-check-circle cert-icon"></i>
-            <div><p class="cert-name">ITIL v4 / PMO</p><p class="cert-org">Axelos</p></div>
-          </div>
-          <div class="cert-item">
-            <i class="fas fa-check-circle cert-icon"></i>
-            <div><p class="cert-name">Scrum Master Certified (SMC)</p><p class="cert-org">SCRUMstudy</p></div>
-          </div>
-          <div class="cert-item">
-            <i class="fas fa-check-circle cert-icon"></i>
-            <div><p class="cert-name">SAFe for Teams</p><p class="cert-org">Scaled Agile, Inc.</p></div>
-          </div>
-          <div class="cert-item">
-            <i class="fas fa-check-circle cert-icon"></i>
-            <div><p class="cert-name">PMP Preparation — Alpha Program</p><p class="cert-org">Project Management Institute (PMI)</p></div>
-          </div>
-          <div class="cert-item">
-            <i class="fas fa-check-circle cert-icon"></i>
-            <div><p class="cert-name">Toastmasters — Comunicación &amp; Liderazgo</p><p class="cert-org">Toastmasters International</p></div>
-          </div>
-          <div class="cert-item">
-            <i class="fas fa-check-circle cert-icon"></i>
-            <div><p class="cert-name">Challenger for Sales</p><p class="cert-org">Challenger Inc.</p></div>
-          </div>
+          <div class="cert-item"><i class="fas fa-check-circle cert-icon"></i><div><p class="cert-name">ITIL v4 / PMO</p><p class="cert-org">Axelos</p></div></div>
+          <div class="cert-item"><i class="fas fa-check-circle cert-icon"></i><div><p class="cert-name">Scrum Master Certified (SMC)</p><p class="cert-org">SCRUMstudy</p></div></div>
+          <div class="cert-item"><i class="fas fa-check-circle cert-icon"></i><div><p class="cert-name">SAFe for Teams</p><p class="cert-org">Scaled Agile, Inc.</p></div></div>
+          <div class="cert-item"><i class="fas fa-check-circle cert-icon"></i><div><p class="cert-name">PMP Preparation — Alpha Program</p><p class="cert-org">Project Management Institute (PMI)</p></div></div>
+          <div class="cert-item"><i class="fas fa-check-circle cert-icon"></i><div><p class="cert-name">Toastmasters — Comunicación &amp; Liderazgo</p><p class="cert-org">Toastmasters International</p></div></div>
+          <div class="cert-item"><i class="fas fa-check-circle cert-icon"></i><div><p class="cert-name">Challenger for Sales</p><p class="cert-org">Challenger Inc.</p></div></div>
         </div>
       </div>
 
       <div class="reco-panel animate-on-scroll">
-        <h3 class="panel-title"><i class="fas fa-trophy"></i> Reconocimientos</h3>
+        <h3 class="panel-title"><i class="fas fa-trophy"></i> <span data-i18n="reco.panel">Reconocimientos</span></h3>
         <div class="reco-list">
           <div class="reco-item">
-            <div class="reco-year">2019 · 2021 · 2022 · 2023 · 2024</div>
-            <p class="reco-name">Excellence in Project Execution Award</p>
-            <p class="reco-org">Siemens DISW — Meso Region &amp; Canada (2021)</p>
+            <div class="reco-year" data-i18n="reco1.year">2019 · 2021 · 2022 · 2023 · 2024 · 2025</div>
+            <p   class="reco-name" data-i18n="reco1.name">Excellence in Project Execution Award</p>
+            <p   class="reco-org"  data-i18n="reco1.org">Siemens DISW — Meso Region &amp; Canada (2021)</p>
           </div>
           <div class="reco-item">
-            <div class="reco-year">2021</div>
-            <p class="reco-name">Top Service Contributor</p>
-            <p class="reco-org">Siemens — ACE Awards 2021</p>
+            <div class="reco-year" data-i18n="reco2.year">2021</div>
+            <p   class="reco-name" data-i18n="reco2.name">Top Service Contributor</p>
+            <p   class="reco-org"  data-i18n="reco2.org">Siemens — ACE Awards 2021</p>
           </div>
           <div class="reco-item">
-            <div class="reco-year">2017</div>
-            <p class="reco-name">Proyecto más importante del año en Siemens LATAM</p>
-            <p class="reco-org">Siemens IT — Proyecto Cancún (fusión Divisiones MX/CAM)</p>
+            <div class="reco-year" data-i18n="reco3.year">2017</div>
+            <p   class="reco-name" data-i18n="reco3.name">Proyecto más importante del año en Siemens LATAM</p>
+            <p   class="reco-org"  data-i18n="reco3.org">Siemens IT — Proyecto Cancún (fusión Divisiones MX/CAM)</p>
           </div>
         </div>
       </div>
@@ -320,95 +265,62 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     SKILLS
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ SKILLS ══════════════════════ -->
 <section id="skills">
   <div class="container">
-    <h2 class="section-title">Skills</h2>
-
+    <h2 class="section-title" data-i18n="skills.title">Skills</h2>
     <div class="skills-grid">
 
       <div class="skills-group animate-on-scroll">
-        <h3 class="skills-group-title">Gestión &amp; Liderazgo</h3>
+        <h3 class="skills-group-title" data-i18n="skills.group1">Gestión &amp; Liderazgo</h3>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Project / Program Management</span>
-            <span class="skill-level prod">Producción</span>
-          </div>
+          <div class="skill-header"><span>Project / Program Management</span><span class="skill-level prod" data-i18n="level.prod">Producción</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Delivery Governance / P&amp;L</span>
-            <span class="skill-level prod">Producción</span>
-          </div>
+          <div class="skill-header"><span>Delivery Governance / P&amp;L</span><span class="skill-level prod" data-i18n="level.prod">Producción</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Agile / Scrum / SAFe</span>
-            <span class="skill-level prod">Producción</span>
-          </div>
+          <div class="skill-header"><span>Agile / Scrum / SAFe</span><span class="skill-level prod" data-i18n="level.prod">Producción</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Stakeholder Management</span>
-            <span class="skill-level adv">Avanzado</span>
-          </div>
+          <div class="skill-header"><span>Stakeholder Management</span><span class="skill-level adv" data-i18n="level.adv">Avanzado</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>MS Project / Office 365</span>
-            <span class="skill-level prod">Producción</span>
-          </div>
+          <div class="skill-header"><span>MS Project / Office 365</span><span class="skill-level prod" data-i18n="level.prod">Producción</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
         </div>
       </div>
 
       <div class="skills-group animate-on-scroll">
-        <h3 class="skills-group-title">Tecnología</h3>
+        <h3 class="skills-group-title" data-i18n="skills.group2">Tecnología</h3>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>SAP / ERP Integrations</span>
-            <span class="skill-level adv">Avanzado</span>
-          </div>
+          <div class="skill-header"><span>SAP / ERP Integrations</span><span class="skill-level adv" data-i18n="level.adv">Avanzado</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:84%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>IIoT / Cloud / PLM / MES</span>
-            <span class="skill-level int">Intermedio</span>
-          </div>
+          <div class="skill-header"><span>IIoT / Cloud / PLM / MES</span><span class="skill-level int" data-i18n="level.int">Intermedio</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:62%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Power BI / Tableau</span>
-            <span class="skill-level adv">Avanzado</span>
-          </div>
+          <div class="skill-header"><span>Power BI / Tableau</span><span class="skill-level adv" data-i18n="level.adv">Avanzado</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Generative AI</span>
-            <span class="skill-level int">Intermedio</span>
-          </div>
+          <div class="skill-header"><span>Generative AI</span><span class="skill-level int" data-i18n="level.int">Intermedio</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:62%"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-header">
-            <span>Salesforce / CRM</span>
-            <span class="skill-level int">Intermedio</span>
-          </div>
+          <div class="skill-header"><span>Salesforce / CRM</span><span class="skill-level int" data-i18n="level.int">Intermedio</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:58%"></div></div>
         </div>
       </div>
 
       <div class="skills-group animate-on-scroll">
-        <h3 class="skills-group-title">Habilidades Blandas</h3>
+        <h3 class="skills-group-title" data-i18n="skills.group3">Habilidades Blandas</h3>
         <div class="skills-chips">
           <span class="skill-chip">Liderazgo</span>
           <span class="skill-chip">Customer Focus</span>
@@ -430,67 +342,52 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     HOBBIES
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ HOBBIES ══════════════════════ -->
 <section id="hobbies">
   <div class="container">
-    <h2 class="section-title">Intereses &amp; Hobbies</h2>
-
+    <h2 class="section-title" data-i18n="hobbies.title">Intereses &amp; Hobbies</h2>
     <div class="hobbies-grid">
       <div class="hobby-card animate-on-scroll">
         <div class="hobby-icon">📚</div>
-        <p class="hobby-label">Lectura</p>
+        <p class="hobby-label" data-i18n="hobby1">Lectura</p>
       </div>
       <div class="hobby-card animate-on-scroll">
         <div class="hobby-icon">🏈</div>
-        <p class="hobby-label">NFL Football</p>
+        <p class="hobby-label" data-i18n="hobby2">NFL Football</p>
       </div>
       <div class="hobby-card animate-on-scroll">
         <div class="hobby-icon">🥊</div>
-        <p class="hobby-label">Boxeo</p>
+        <p class="hobby-label" data-i18n="hobby3">Boxeo</p>
       </div>
       <div class="hobby-card animate-on-scroll">
         <div class="hobby-icon">✈️</div>
-        <p class="hobby-label">Viajes</p>
+        <p class="hobby-label" data-i18n="hobby4">Viajes</p>
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- ══════════════════════════════════════════
-     FOOTER / CONTACTO
-══════════════════════════════════════════ -->
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
 <footer id="contacto">
   <div class="container">
-    <h2 class="footer-title">Contacto</h2>
-    <p class="footer-sub">¿Tienes un proyecto o quieres conectar? Escríbeme.</p>
-
+    <h2 class="footer-title" data-i18n="footer.title">Contacto</h2>
+    <p  class="footer-sub"   data-i18n="footer.sub">¿Tienes un proyecto o quieres conectar? Escríbeme.</p>
     <div class="contact-links">
       <a href="mailto:edgar.coronel@gmail.com" class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <span>edgar.coronel@gmail.com</span>
+        <i class="fas fa-envelope"></i><span>edgar.coronel@gmail.com</span>
       </a>
       <a href="https://www.linkedin.com/in/edgar-coronel-mba-6b724723" target="_blank" rel="noopener" class="contact-item">
-        <i class="fab fa-linkedin"></i>
-        <span>LinkedIn</span>
-      </a>
-      <a href="https://github.com/edgarcoroneln" target="_blank" rel="noopener" class="contact-item">
-        <i class="fab fa-github"></i>
-        <span>GitHub</span>
+        <i class="fab fa-linkedin"></i><span>LinkedIn</span>
       </a>
     </div>
-
     <div class="footer-bottom">
-      <p>© 2026 Edgar Edmundo Coronel Navarrete</p>
-      <p class="footer-credit">Desarrollado con Google Stitch · Claude AI · GitHub Pages</p>
+      <p>© 2026 Edgar Coronel Navarrete</p>
+      <p class="footer-credit" data-i18n="footer.credit">Desarrollado con Google Stitch · Claude AI · GitHub Pages</p>
     </div>
   </div>
 </footer>
 
-
-<!-- Botón volver arriba -->
 <button id="backToTop" aria-label="Volver arriba">↑</button>
 
 <script src="js/app.js"></script>

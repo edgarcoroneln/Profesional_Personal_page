@@ -141,6 +141,27 @@ ul  { list-style: none; }
 .nav-cta::after  { display: none !important; }
 .nav-cta:hover   { opacity: .85 !important; color: #003640 !important; }
 
+/* Language toggle */
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface-muted);
+  padding: .28rem .65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color .2s, color .2s;
+}
+
+.lang-toggle:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -484,9 +505,10 @@ section:nth-child(even) { background: var(--surface); }
   font-weight: 600;
 }
 
-.earlier-list { display: flex; flex-direction: column; gap: .6rem; }
-.earlier-item { display: flex; gap: .75rem; font-size: .9rem; color: var(--on-surface-muted); }
-.earlier-item strong { color: var(--on-surface); min-width: 130px; }
+.earlier-list { display: flex; flex-direction: column; gap: .9rem; }
+.earlier-item { display: flex; flex-direction: column; gap: .2rem; font-size: .9rem; }
+.earlier-item strong { color: var(--on-surface); font-size: .95rem; }
+.earlier-item span   { color: var(--on-surface-muted); }
 
 /* ═══════════════════════════════════════
    FORMACIÓN
