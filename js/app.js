@@ -67,9 +67,9 @@ const translations = {
     'edu3.degree':  'Ingeniería en Sistemas Computacionales',
     'edu3.detail':  'Veracruz, México',
 
-    'certs.title':  'Certificaciones &amp; Reconocimientos',
-    'certs.panel':  'Certificaciones',
-    'reco.panel':   'Reconocimientos',
+    'certs.title':   'Certificaciones &amp; Reconocimientos',
+    'certs.formal':  'Certificaciones Formales',
+    'certs.linkedin':'LinkedIn Learning',
     'reco1.year':   "2019 · 2021 · 2022 · 2023 · 2024 · 2025",
     'reco1.name':   'Excellence in Project Execution Award',
     'reco1.org':    'Siemens DISW — Meso Region &amp; Canada (2021)',
@@ -82,11 +82,12 @@ const translations = {
 
     'skills.title':  'Skills',
     'skills.group1': 'Gestión &amp; Liderazgo',
-    'skills.group2': 'Tecnología',
+    'skills.group2': 'Tecnología &amp; Datos',
     'skills.group3': 'Habilidades Blandas',
     'level.prod': 'Producción',
     'level.adv':  'Avanzado',
     'level.int':  'Intermedio',
+    'level.bas':  'Básico',
 
     'hobbies.title': 'Intereses &amp; Hobbies',
     'hobby1': 'Lectura',
@@ -165,9 +166,9 @@ const translations = {
     'edu3.degree':  'Computer Systems Engineering',
     'edu3.detail':  'Veracruz, Mexico',
 
-    'certs.title':  'Certifications &amp; Achievements',
-    'certs.panel':  'Certifications',
-    'reco.panel':   'Achievements',
+    'certs.title':   'Certifications &amp; Achievements',
+    'certs.formal':  'Formal Certifications',
+    'certs.linkedin':'LinkedIn Learning',
     'reco1.year':   "2019 · 2021 · 2022 · 2023 · 2024 · 2025",
     'reco1.name':   'Excellence in Project Execution Award',
     'reco1.org':    'Siemens DISW — Meso Region &amp; Canada (2021)',
@@ -180,11 +181,12 @@ const translations = {
 
     'skills.title':  'Skills',
     'skills.group1': 'Management &amp; Leadership',
-    'skills.group2': 'Technology',
+    'skills.group2': 'Technology &amp; Data',
     'skills.group3': 'Soft Skills',
     'level.prod': 'Production',
     'level.adv':  'Advanced',
     'level.int':  'Intermediate',
+    'level.bas':  'Basic',
 
     'hobbies.title': 'Interests &amp; Hobbies',
     'hobby1': 'Reading',

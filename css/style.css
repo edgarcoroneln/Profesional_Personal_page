@@ -579,14 +579,50 @@ section:nth-child(even) { background: var(--surface); }
 /* ═══════════════════════════════════════
    CERTIFICACIONES & RECONOCIMIENTOS
 ═══════════════════════════════════════ */
-.cert-reco-grid {
+
+/* — Reconocimientos: fila superior — */
+.reco-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.reco-card {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-top: 3px solid var(--secondary-dim);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+
+.reco-card:hover {
+  border-color: var(--secondary-dim);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(2,190,220,.14);
+}
+
+.reco-icon {
+  color: var(--secondary);
+  font-size: 1.25rem;
+  margin-bottom: .75rem;
+  display: block;
+}
+
+.reco-year { font-size: .72rem; font-weight: 700; color: var(--secondary); letter-spacing: .06em; margin-bottom: .35rem; }
+.reco-name { font-size: .9rem; font-weight: 600; color: var(--on-surface); margin-bottom: .25rem; line-height: 1.35; }
+.reco-org  { font-size: .78rem; color: var(--outline); }
+
+/* — Certificaciones Formales + LinkedIn: fila inferior — */
+.cert-learning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
   gap: 2rem;
 }
 
 .cert-panel,
-.reco-panel {
+.linkedin-panel {
   background: var(--surface-container);
   border: 1px solid var(--outline-variant);
   border-radius: var(--radius-lg);
@@ -612,11 +648,32 @@ section:nth-child(even) { background: var(--surface); }
 .cert-name { font-size: .9rem; font-weight: 600; color: var(--on-surface); margin-bottom: .15rem; }
 .cert-org  { font-size: .78rem; color: var(--outline); }
 
-.reco-list { display: flex; flex-direction: column; gap: 1.25rem; }
-.reco-item { border-left: 3px solid var(--secondary-dim); padding-left: 1rem; }
-.reco-year { font-size: .72rem; font-weight: 700; color: var(--secondary); letter-spacing: .06em; margin-bottom: .25rem; }
-.reco-name { font-size: .9rem; font-weight: 600; color: var(--on-surface); margin-bottom: .2rem; }
-.reco-org  { font-size: .8rem; color: var(--outline); }
+/* — LinkedIn badges grid — */
+.linkedin-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .65rem;
+}
+
+.linkedin-badge {
+  background: var(--surface-high);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  padding: .65rem .75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  transition: border-color .2s, transform .2s;
+}
+
+.linkedin-badge:hover {
+  border-color: #0077b5;
+  transform: translateY(-2px);
+}
+
+.li-icon { color: #0077b5; font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+.li-name { font-size: .77rem; font-weight: 600; color: var(--on-surface-muted); line-height: 1.3; margin-bottom: .1rem; }
+.li-date { font-size: .68rem; color: var(--outline); }
 
 /* ═══════════════════════════════════════
    SKILLS
@@ -667,6 +724,7 @@ section:nth-child(even) { background: var(--surface); }
 .skill-level.prod { background: rgba(2,190,220,.14); color: var(--secondary); }
 .skill-level.adv  { background: rgba(190,199,217,.14); color: var(--primary); }
 .skill-level.int  { background: rgba(143,144,150,.14); color: var(--outline); }
+.skill-level.bas  { background: rgba(200,168,60,.14);  color: #c8a840; }
 
 .skill-bar {
   height: 3px;
@@ -836,8 +894,10 @@ section:nth-child(even) { background: var(--surface); }
    RESPONSIVE — Tablet (≤1024px)
 ═══════════════════════════════════════ */
 @media (max-width: 1024px) {
-  .skills-grid    { grid-template-columns: 1fr 1fr; }
-  .education-grid { grid-template-columns: 1fr 1fr; }
+  .skills-grid         { grid-template-columns: 1fr 1fr; }
+  .education-grid      { grid-template-columns: 1fr 1fr; }
+  .cert-learning-grid  { grid-template-columns: 1fr; }
+  .reco-row            { grid-template-columns: 1fr 1fr; }
 }
 
 /* ═══════════════════════════════════════
@@ -876,10 +936,12 @@ section:nth-child(even) { background: var(--surface); }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo-wrapper { max-width: 260px; margin: 0 auto; }
 
-  .education-grid  { grid-template-columns: 1fr; }
-  .cert-reco-grid  { grid-template-columns: 1fr; }
-  .skills-grid     { grid-template-columns: 1fr; }
-  .hobbies-grid    { grid-template-columns: repeat(2, 1fr); }
+  .education-grid      { grid-template-columns: 1fr; }
+  .cert-learning-grid  { grid-template-columns: 1fr; }
+  .reco-row            { grid-template-columns: 1fr; }
+  .linkedin-badges     { grid-template-columns: repeat(2, 1fr); }
+  .skills-grid         { grid-template-columns: 1fr; }
+  .hobbies-grid        { grid-template-columns: repeat(2, 1fr); }
 
   .footer-bottom   { flex-direction: column; text-align: center; }
 
