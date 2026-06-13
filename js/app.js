@@ -251,7 +251,7 @@ const translations = {
 
     'footer.title':  'Contact',
     'footer.sub':    "Have a project or want to connect? Let's talk.",
-    'footer.cv':     'Download CV',
+    'footer.cv':     'Download Resume',
     'footer.credit': 'Built with Google Stitch · Claude AI · GitHub Pages',
 
     'lang.toggle.label': 'ES',
