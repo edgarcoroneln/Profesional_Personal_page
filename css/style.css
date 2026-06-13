@@ -1046,7 +1046,7 @@ section:nth-child(even) { background: var(--surface); }
 ═══════════════════════════════════════ */
 .hobbies-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -1088,6 +1088,26 @@ section:nth-child(even) { background: var(--surface); }
   font-weight: 700;
   color: #fff;
   letter-spacing: .03em;
+}
+
+.hobby-card--cinema {
+  background: linear-gradient(135deg, #0d1828 0%, #1a0d2e 100%);
+}
+
+.hobby-card--dogs {
+  background: linear-gradient(135deg, #0d1e14 0%, #0a1a2e 100%);
+}
+
+.hobby-bg-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  font-size: 5rem;
+  color: var(--secondary);
+  opacity: .12;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* ═══════════════════════════════════════
@@ -1239,6 +1259,7 @@ section:nth-child(even) { background: var(--surface); }
   .linkedin-badges     { grid-template-columns: repeat(2, 1fr); }
   .skills-grid         { grid-template-columns: 1fr; }
   .hobbies-grid        { grid-template-columns: repeat(2, 1fr); }
+  .hobbies-grid .hobby-card { min-height: 200px; }
 
   .footer-bottom   { flex-direction: column; text-align: center; }
 

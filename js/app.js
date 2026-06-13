@@ -119,9 +119,12 @@ const translations = {
     'hobby2': 'NFL Football',
     'hobby3': 'Boxeo',
     'hobby4': 'Viajes',
+    'hobby5': 'Películas',
+    'hobby6': 'Perros',
 
     'footer.title':  'Contacto',
     'footer.sub':    '¿Tienes un proyecto o quieres conectar? Escríbeme.',
+    'footer.cv':     'Descargar CV',
     'footer.credit': 'Desarrollado con Google Stitch · Claude AI · GitHub Pages',
 
     'lang.toggle.label': 'EN',
@@ -243,9 +246,12 @@ const translations = {
     'hobby2': 'NFL Football',
     'hobby3': 'Boxing',
     'hobby4': 'Traveling',
+    'hobby5': 'Movies',
+    'hobby6': 'Dogs',
 
     'footer.title':  'Contact',
     'footer.sub':    "Have a project or want to connect? Let's talk.",
+    'footer.cv':     'Download CV',
     'footer.credit': 'Built with Google Stitch · Claude AI · GitHub Pages',
 
     'lang.toggle.label': 'ES',
